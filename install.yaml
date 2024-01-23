@@ -1,0 +1,5 @@
+name: storybook
+
+project_files:
+- config.storybook.yaml
+- commands/host/storybook
