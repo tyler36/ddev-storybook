@@ -34,6 +34,10 @@ The addon assumes the developer is correctly installed and configured Storybook 
 ddev get tyler36/ddev-storybook
 ddev restart
 ```
+2. Install storybook if you haven't already. See the [Storybook get started page](https://storybook.js.org/docs/get-started/install) for instructions. E.g.
+```shell
+ddev exec npx storybook@latest init
+```
 
 ## Usage
 
