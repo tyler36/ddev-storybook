@@ -1,3 +1,4 @@
+#ddev-generated
 web_extra_exposed_ports:
   - name: storybook
     container_port: 6006
