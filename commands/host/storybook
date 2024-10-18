@@ -8,11 +8,11 @@
 # Define and execute command to start Storybook server
 startStorybookServer () {
   # Command used to start storybook server
-  command="ddev npm run storybook"
+  command="npm run storybook"
 
   # If 'yarn.lock' exists, we'll assume dev wants to use yarn package manager.
   if test -f ./yarn.lock; then
-    command="ddev yarn storybook"
+    command="yarn storybook"
   fi
 
   $command;
