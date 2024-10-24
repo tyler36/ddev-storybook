@@ -46,6 +46,11 @@ ddev restart
 ```shell
 ddev exec npx storybook@latest init
 ```
+**Note**: In some cases, Storybook may not launch correctly after the initial installation. To help prevent errors like `Error: spawn xdg-open ENOENT`, try using the `--no-dev` flag during initialization:
+
+```shell
+ddev exec npx storybook@latest init --no-dev
+```
 
 ## Usage
 
