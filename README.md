@@ -28,15 +28,28 @@ The addon assumes the developer is correctly installed and configured Storybook 
 
 ## Getting started
 
-1. Install the addon and restart DDEV.
+1. Install the add-on and restart DDEV:
 
-```shell
+For DDEV 1.23.4 and earlier:
+```
 ddev get tyler36/ddev-storybook
 ddev restart
 ```
+
+For DDEV 1.23.5 and later:
+```
+ddev add-on get tyler36/ddev-storybook
+ddev restart
+```
+
 2. Install storybook if you haven't already. See the [Storybook get started page](https://storybook.js.org/docs/get-started/install) for instructions. E.g.
 ```shell
 ddev exec npx storybook@latest init
+```
+**Note**: In some cases, Storybook may not launch correctly after the initial installation. To help prevent errors like `Error: spawn xdg-open ENOENT`, try using the `--no-dev` flag during initialization:
+
+```shell
+ddev exec npx storybook@latest init --no-dev
 ```
 
 ## Usage
@@ -67,6 +80,20 @@ ddev storybook --start
 
 This command will try to run the "storybook" script from `package.json` in NPM.
 If a `yarn.lock` file exists, it will run the command with YARN instead.
+
+### Removing the Add-On
+
+For DDEV 1.23.4 and earlier:
+To remove the add-on, use the following command:
+```
+ddev get --remove tyler36/ddev-storybook
+```
+
+For DDEV 1.23.5 and later:
+To remove the add-on, use this updated command:
+```
+ddev add-on remove tyler36/ddev-storybook
+```
 
 ## Contributing
 
