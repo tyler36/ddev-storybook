@@ -30,10 +30,24 @@ The addon assumes the developer is correctly installed and configured Storybook 
 
 1. Install the addon and restart DDEV.
 
+For DDEV v1.23.5 or above run
+
+```shell
+ddev add-on get tyler36/ddev-storybook
+```
+
+For earlier versions of DDEV run
+
 ```shell
 ddev get tyler36/ddev-storybook
+```
+
+Then restart your project
+
+```shell
 ddev restart
 ```
+
 2. Install storybook if you haven't already. See the [Storybook get started page](https://storybook.js.org/docs/get-started/install) for instructions. E.g.
 ```shell
 ddev exec npx storybook@latest init
