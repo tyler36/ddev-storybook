@@ -30,14 +30,7 @@ The addon assumes the developer is correctly installed and configured Storybook 
 
 1. Install the add-on and restart DDEV:
 
-For DDEV 1.23.4 and earlier:
-```
-ddev get tyler36/ddev-storybook
-ddev restart
-```
-
-For DDEV 1.23.5 and later:
-```
+```shell
 ddev add-on get tyler36/ddev-storybook
 ddev restart
 ```
@@ -83,14 +76,6 @@ If a `yarn.lock` file exists, it will run the command with YARN instead.
 
 ### Removing the Add-On
 
-For DDEV 1.23.4 and earlier:
-To remove the add-on, use the following command:
-```
-ddev get --remove tyler36/ddev-storybook
-```
-
-For DDEV 1.23.5 and later:
-To remove the add-on, use this updated command:
 ```
 ddev add-on remove tyler36/ddev-storybook
 ```
